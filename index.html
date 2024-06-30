@@ -42,19 +42,61 @@
     </header>
 
     <main>
-      <section id="a-propos" class="color-apropos">
-        <h1>Je me présente : </h1>
-        <p>En pleine reconversion professionnelle.</p>
-      </br>
-      <p>Dernier parcours suivit: formation intégrateur web chez Openclassrooms</p>
-    </br>
-    <p>Bonne visite sur mon site !</p> 
-      </section>
+      <div id="a-propos" class="color-apropos">
+        <h1>Je me présente :</h1>
+        <p>
+          En pleine reconversion professionnelle. Dernier parcours suivit:
+          formation intégrateur web chez Openclassrooms Bonne visite sur mon
+          site !
+        </p>
+      </div>
+
+      <div id="projets" class="color-projets">
+        <h1>Projets semi-professionnels</h1>
+        <div class="text-projets">
+          <article class="cardprojets">
+            <a href="#">
+              <img
+                class="card-image"
+                src="./assets/images/booki.png"
+                alt="image projet Booki"
+              />
+              <div class="card-contentprojets">
+                <h2 class="cardh-title">Booki</h2>
+                <p class="cardh-subtitle">
+                  Agence d'hébergements<span class="a-h">€</span>
+                </p>
+              </div>
+              <div class="card-competences">
+                <i className="fa-brands fa-html5" aria-hidden="true">Html</i>
+                <i className="fa-brands fa-css3-alt" aria-hidden="true">Css</i>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="slider-projets"></div>
+      </div>
+
+      <div id="compétences" class="color-competence slider-competence">
+        <!----ici mon animation avec les icones-->
+        <i className="fa-brands fa-js-square">JavaScript</i>
+        <i className="fa-brands fa-html5">HTML</i>
+        <i className="fa-brands fa-css3-alt">CSS</i>
+        <i className="fa-brands fa-trello">Trello</i>
+        <i className="fa-brands fa-kanban">Kanban</i>
+        <i className="fa-brands fa-sass">Sass</i>
+        <i className="fa-brands fa-redux">Redux</i>
+        <i className="fa-brands fa-redux-square">Redux Toolkit</i>
+        <i className="fa-brands fa-ai">AI</i>
+        <i className="fa-brands fa-code">VSCode</i>
+        <i className="fa-brands fa-github">GitHub</i>
+      </div>
     </main>
 
     <footer>
       <footer>
-        <div class="links">
+        <div class="links" id="contact">
           <a href="#" class="link">
             <i class="fab fa-linkedin"></i>
             LinkedIn

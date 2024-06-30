@@ -4,6 +4,7 @@ body {
   background-position: center; /* Centre l'image horizontalement et verticalement */
   background-repeat: no-repeat;
   height: 800px;
+  padding: 30px;
 }
 .title {
   color: white;
@@ -97,8 +98,27 @@ body {
 .color-apropos {
   background-color: #fff;
   width: 100%;
-  height: 150px;
+  height: 100px;
+
   color: #008b8b;
+}
+.color-projets {
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+
+  color: #008b8b;
+  margin-top: 20ox;
+}
+.color-competence {
+  background-color: #fff;
+  width: 100%;
+  height: 200px;
+}
+/*styles card projets*/
+.card-image {
+  width: 200px;
+  height: 200px;
 }
 /* Styles pour le footer */
 footer {
@@ -137,4 +157,8 @@ footer .fab,
 .fas {
   color: #fff;
   size: 25px;
+}
+i.slider-competence,
+.fa-brands {
+  color: black;
 }
