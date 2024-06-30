@@ -19,6 +19,11 @@
   </head>
   <body class="body">
     <!-- Le contenu de votre page -->
+    <div class="loader">
+      <div class="loaderConteneur">
+        <div class="loaderConteneurChargement"></div>
+      </div>
+    </div>
     <header>
       <div class="header-content">
         <div class="logo">
@@ -36,6 +41,7 @@
             <li><a href="#projets">Projets</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#liens">Liens</a></li>
           </ul>
         </nav>
       </div>
@@ -74,7 +80,31 @@
             </a>
           </article>
         </div>
-
+        <div class="text-projets">
+          <article class="cardprojets">
+            <a href="#">
+              <img
+                class="card-image"
+                src="./assets/images/omyfood.png"
+                alt="image projet ohmyfood"
+              />
+              <div class="card-contentprojets">
+                <h2 class="cardh-title">ohmyfood</h2>
+                <p class="cardh-subtitle">
+                  Site d'hebergements dans la restauration<span class="a-h"
+                    >€</span
+                  >
+                </p>
+              </div>
+              <div class="card-competences">
+                <i className="fa-brands fa-html5" aria-hidden="true">Html</i>
+                <i className="fa-brands fa-css3-alt" aria-hidden="true">Css</i>
+                <i className="fa-brands fa-sass" aria-hidden="true">Sass</i>
+              </div>
+            </a>
+          </article>
+        </div>
+        <!--troisième projet kasa ou argentbank a rajouter-->
         <div class="slider-projets"></div>
       </div>
 
@@ -92,11 +122,25 @@
         <i className="fa-brands fa-code">VSCode</i>
         <i className="fa-brands fa-github">GitHub</i>
       </div>
-    </main>
 
+      <div id="contact">
+        <h2 class="color-title">Contact</h2>
+        <p class="color-text">Vous avez un projet ? Discutons-en !</p>
+        <form action="#" method="post">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
+    </main>
+    <!--partie du formulaire a rajouiter-->
     <footer>
       <footer>
-        <div class="links" id="contact">
+        <div class="links" id="liens">
           <a href="#" class="link">
             <i class="fab fa-linkedin"></i>
             LinkedIn
