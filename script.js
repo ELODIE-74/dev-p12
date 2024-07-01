@@ -1,3 +1,4 @@
+/*loader de téléchargement */
 const loaderContainer = document.getElementById("loader-container");
 const loaderBar = document.getElementById("loader-bar");
 
@@ -12,15 +13,21 @@ const interval = setInterval(() => {
   }
 }, 300);
 
-// Récupérer les éléments nécessaires
+// Récupération des éléments du menu hamburger
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
+const menuLinks = document.querySelectorAll(".menu li a");
 
-// Ajouter un écouteur d'événement sur le menu hamburger
+// Ajout de l'événement de clic sur le menu hamburger
 hamburgerMenu.addEventListener("click", () => {
-  // Ajouter/Enlever la classe 'active' sur le menu
-  menu.classList.toggle("active");
-
-  // Ajouter/Enlever les classes CSS pour animer le menu hamburger
   hamburgerMenu.classList.toggle("open");
+  menu.classList.toggle("active");
+});
+
+// Ajout de l'événement de clic sur les liens du menu
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerMenu.classList.remove("open");
+    menu.classList.remove("active");
+  });
 });

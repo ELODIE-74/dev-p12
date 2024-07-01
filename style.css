@@ -1,9 +1,14 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 body {
   background-image: url("assets/images/backgroundbody.webp");
   background-size: cover; /* Redimensionne l'image pour qu'elle couvre toute la fenêtre */
   background-position: center; /* Centre l'image horizontalement et verticalement */
   background-repeat: no-repeat;
-  height: 800px;
+  margin: 0;
   padding: 30px;
 }
 .title {
@@ -60,7 +65,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: #0095b6;
   height: 50px;
 }
 
@@ -138,79 +143,114 @@ body {
     font-size: 18px;
   }
 }
+
 /*style présentation*/
-.color-apropos {
-  background-color: #fff;
-  width: 100%;
-  height: 100px;
+#a-propos {
+  max-width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: typewriter 15s steps(20) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+}
 
-  color: #008b8b;
-}
-.color-projets {
-  background-color: #fff;
-  width: 100%;
-  height: 400px;
-
-  color: #008b8b;
-  margin-top: 20ox;
-}
-.color-competence {
-  background-color: #fff;
-  width: 100%;
-  height: 200px;
-}
-/*styles card projets*/
-.card-image {
-  width: 200px;
-  height: 200px;
-}
-/*Styles formulaire de contact*/
-#contact > * {
+#a-propos h1,
+#a-propos h2 {
   text-align: center;
+  margin-top: 0;
+  color: #0095b6;
 }
-#contact h2 {
-  margin-bottom: 20px;
+
+#a-propos p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
 }
-#contact form {
-  text-align: left;
-  margin-top: 30px;
+
+/* Animation de machine à écrire */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*Styles formulaire de contact*/
+#contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-#contact input {
-  height: 50px;
-  font-size: 1.2em;
-  border: none;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+#contact > * {
+  width: 100%;
 }
+
+#contact h2 {
+  margin-bottom: 1rem;
+  color: #0095b6;
+  text-align: center;
+}
+
+#contact p.color-text {
+  margin-bottom: 2rem;
+  color: #0095b6;
+  text-align: center;
+}
+
+#contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
 #contact label {
-  margin: 2em 0 1em 0;
-}
-#contact textarea {
-  border: none;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  text-align: right;
+  margin-right: 1rem;
 }
 
-input[type="submit"] {
+#contact input,
+#contact textarea {
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact textarea {
+  height: 10rem;
+}
+
+#contact input[type="submit"] {
+  width: 180px;
+  height: 50px;
+  margin: 2rem auto 0;
+  background-color: #0095b6;
+  color: #fff;
   font-family: "Syne";
   font-weight: 700;
-  color: white;
-  background-color: #1d6154;
-  margin: 2em auto;
-  width: 180px;
-  text-align: center;
-  border-radius: 60px;
+  border-radius: 2rem;
+  cursor: pointer;
 }
-.color-title {
-  color: #1d6154;
-}
-.color-text {
-  color: #1d6154;
-}
+
 /* Styles pour le footer */
 footer {
-  background-color: aquamarine;
+  background-color: #0095b6;
   color: #fff;
   padding: 20px 0;
   margin-top: 5px;
@@ -224,7 +264,7 @@ footer {
 }
 
 .link {
-  color: #008b8b;
+  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
