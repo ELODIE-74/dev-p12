@@ -31,3 +31,63 @@ menuLinks.forEach((link) => {
     menu.classList.remove("active");
   });
 });
+
+//slider
+// Sélectionnez tous les éléments nécessaires
+const sliderContainers = document.querySelectorAll(".slider-container");
+const prevBtns = document.querySelectorAll(".prev-btn");
+const nextBtns = document.querySelectorAll(".next-btn");
+const dotContainers = document.querySelectorAll(".slider-dots");
+
+// Boucle sur chaque slider
+sliderContainers.forEach((container, index) => {
+  const slides = container.querySelectorAll(".slide");
+  const dotContainer = dotContainers[index];
+
+  // Créez les dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    dotContainer.appendChild(dot);
+  });
+
+  let currentSlide = 0;
+  const dots = dotContainer.querySelectorAll(".dot");
+
+  // Fonction pour afficher la diapositive active et les dots correspondants
+  function showSlide(n) {
+    // Réinitialiser la diapositive active
+    slides.forEach((slide) => slide.classList.remove("active"));
+    dots.forEach((dot) => dot.classList.remove("active"));
+
+    // Afficher la diapositive active
+    slides[n].classList.add("active");
+    dots[n].classList.add("active");
+  }
+
+  // Fonction pour passer à la diapositive suivante
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Fonction pour revenir à la diapositive précédente
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Ajouter les écouteurs d'événements
+  nextBtns[index].addEventListener("click", nextSlide);
+  prevBtns[index].addEventListener("click", prevSlide);
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentSlide = i;
+      showSlide(currentSlide);
+    });
+  });
+
+  // Afficher la première diapositive
+  showSlide(currentSlide);
+});
