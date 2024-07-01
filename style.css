@@ -10,75 +10,47 @@ body {
   color: white;
 }
 /*loader chargement*/
-.loader {
-  z-index: 100;
+#loader-container {
   position: fixed;
-  animation: loadercercle 1s forwards;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(50deg, #99e2d0, #9356dc, #ff79da, #99e2d0);
-}
-.loader .loaderConteneur {
-  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background-image: url("assets/images/backloader.webp");
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.loader .loaderConteneurChargement {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  background-image: url("../../assets/images/logo/ohmyfood.png"); /*faire son logo*/
+  z-index: 9999;
+  animation: loader-grow 0.5s ease-in-out forwards;
+  background-position: center; /* Centre l'image horizontalement et verticalement */
   background-repeat: no-repeat;
-  background-size: contain;
-  filter: invert(100%);
-  width: 200px;
-  height: 40px;
-}
-.loader .loaderConteneurChargement::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 7px solid transparent;
-  border-top-color: green;
-  width: 280px;
-  height: 280px;
-  animation: cercle 800ms linear infinite;
-}
-.loader .loaderConteneurChargement::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 7px solid transparent;
-  border-top-color: green;
-  width: 250px;
-  height: 250px;
-  animation: cercle 900ms linear reverse infinite;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 14px 1fr 14px;
-  grid-template-rows: 1fr auto;
-  position: relative;
+#loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes cercle {
-  from {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(0deg);
-    opacity: 0.3;
-  }
+#loader-content p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
-@keyframes loadercercle {
-  to {
-    visibility: hidden;
-    display: none;
+
+#loader-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #008b8b;
+  transition: width 0.5s ease-in-out;
+}
+
+@keyframes loader-grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
   }
 }
 

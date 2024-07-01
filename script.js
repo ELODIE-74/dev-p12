@@ -1,3 +1,17 @@
+const loaderContainer = document.getElementById("loader-container");
+const loaderBar = document.getElementById("loader-bar");
+
+// Simulation du chargement
+let progress = 0;
+const interval = setInterval(() => {
+  progress += 5;
+  loaderBar.style.width = `${progress}%`;
+  if (progress >= 100) {
+    clearInterval(interval);
+    loaderContainer.style.display = "none";
+  }
+}, 300);
+
 // Récupérer les éléments nécessaires
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
