@@ -142,7 +142,7 @@ const cvIframe = document.getElementById("cv-iframe");
 
 cvLink.addEventListener("click", () => {
   cvModal.style.display = "block";
-  cvIframe.src = "./assets/images/mon_cv (3).png";
+  cvIframe.src = "./assets/images/mon_cv_1.png";
 });
 
 closeButton.addEventListener("click", () => {
