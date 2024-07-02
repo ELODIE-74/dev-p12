@@ -321,7 +321,6 @@ h2 {
   padding: 40px 0;
   border-radius: 20px;
   background: linear-gradient(to right, #000, #0095b6);
-
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -393,7 +392,7 @@ h2 {
 footer {
   background-color: #0095b6;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 5px;
   margin-top: 5px;
   height: 50px;
 }
@@ -430,4 +429,44 @@ footer .fab,
 i.slider-competence,
 .fa-brands {
   color: black;
+}
+
+.cv-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(to right, #000, #0095b6);
+}
+
+.cv-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cv-modal iframe {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to right, #000, #0095b6);
 }

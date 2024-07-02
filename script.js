@@ -133,3 +133,24 @@ function sendFormByEmail(formData) {
     emailBody
   )}`;
 }
+
+//modale cv
+const cvLink = document.getElementById("cv-link");
+const cvModal = document.getElementById("cv-modal");
+const closeButton = document.getElementsByClassName("close-button")[0];
+const cvIframe = document.getElementById("cv-iframe");
+
+cvLink.addEventListener("click", () => {
+  cvModal.style.display = "block";
+  cvIframe.src = "./assets/images/mon_cv (3).png";
+});
+
+closeButton.addEventListener("click", () => {
+  cvModal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === cvModal) {
+    cvModal.style.display = "none";
+  }
+});
