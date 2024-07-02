@@ -28,6 +28,7 @@
         <div class="logo">
           <i class="fas fa-laptop"></i>
         </div>
+        <p style="color: white">Portfolio d'Elodie</p>
         <nav class="navbar">
           <div class="hamburger-menu">
             <div class="line"></div>
@@ -37,7 +38,6 @@
           <ul class="menu">
             <li><a href="#a-propos">À Propos</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#competences">Compétences</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#liens">Liens</a></li>
           </ul>
@@ -47,7 +47,7 @@
 
     <main>
       <div id="a-propos" class="color-apropos">
-        <h1>Portfolio:</h1>
+        <h1>Bienvenue sur mon Portfolio:</h1>
         <h2>Je me présente :</h2>
         <p>
           Mon projet : Reconversion professionnel. Formation : intégrateur web
@@ -70,11 +70,13 @@
             <a
               href="https://github.com/ELODIE-74/booki-starter-code.git"
               class="lien-github"
+              target="_blank"
               >GitHub</a
             >
             <a
               href="https://elodie-74.github.io/booki-starter-code/"
               class="lien-github"
+              target="_blank"
               >GitHub Page</a
             >
             <div class="project-skills">
@@ -90,7 +92,8 @@
               </div>
               <div class="slide">
                 <img
-                  src="./assets/images/booki_2.png"
+                  src="./assets/images/booki_2.png
+                  "
                   alt="Booki Screenshot 2"
                 />
               </div>
@@ -121,6 +124,7 @@
             <a
               href="https://github.com/ELODIE-74/Debuggez-une-application-React.JS.git"
               class="lien-github"
+              target="_blank"
               >GitHub</a
             >
             <div class="project-skills">
@@ -168,9 +172,13 @@
             <a
               href="https://github.com/ELODIE-74/ohmyfood.git"
               class="lien-github"
+              target="_blank"
               >GitHub</a
             >
-            <a href="https://elodie-74.github.io/ohmyfood/" class="lien-github"
+            <a
+              href="https://elodie-74.github.io/ohmyfood/"
+              class="lien-github"
+              target="_blank"
               >GitHub Page</a
             >
             <div class="project-skills">
@@ -218,18 +226,44 @@
           </div>
         </div>
       </div>
+      <section class="contact-section" id="contact">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-text">
+          Vous voulez discuter d'un projet ? Laissez-nous un message.
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Entreprise :</label>
+            <input type="text" id="company" name="company" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Envoyer</button>
+          <div class="confirmation-message" style="display: none"></div>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="links" id="liens">
-        <a href="#" class="link">
+        <a
+          href="www.linkedin.com/in/jance-elodie-3545b2317"
+          class="link"
+          target="_blank"
+        >
           <i class="fab fa-linkedin"></i>
           LinkedIn
         </a>
-        <a href="#" class="link">
+        <a href="https://github.com/ELODIE-74" class="link" target="_blank">
           <i class="fab fa-github"></i>
           GitHub
         </a>
-        <a href="#" class="link">
+        <a href="mailto:jance.elodie.pro@gmail.com" class="link">
           <i class="fas fa-envelope"></i>
           Email
         </a>
