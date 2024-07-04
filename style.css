@@ -181,29 +181,22 @@ body {
   }
 }
 @media (min-width: 480px) {
+  #a-propos h1,
+  #a-propos h2,
+  #a-propos p {
+    animation: none;
+  }
   #a-propos {
-    padding: 30px;
+    padding: 20px;
   }
 
   #a-propos h1,
   #a-propos h2 {
-    font-size: 2rem;
-    animation: typewriter 15s steps(20) infinite;
+    font-size: 1.8rem;
   }
 
   #a-propos p {
-    font-size: 1.2rem;
-    animation: typewriter 15s steps(20) infinite;
-  }
-
-  /* Animation de machine à écrire horizontale */
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+    font-size: 1rem;
   }
 }
 
@@ -218,8 +211,7 @@ body {
   #a-propos h1,
   #a-propos h2,
   #a-propos p {
-    text-align: center;
-    animation: none;
+    animation: typewriter 15s steps(20) infinite;
   }
 }
 
