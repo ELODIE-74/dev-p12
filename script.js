@@ -31,8 +31,47 @@ menuLinks.forEach((link) => {
     menu.classList.remove("active");
   });
 });
-
 //slider
+// Sélectionnez tous les éléments nécessaires
+const sliderContainers = document.querySelectorAll(".slider-container");
+const prevBtns = document.querySelectorAll(".prev-btn");
+const nextBtns = document.querySelectorAll(".next-btn");
+
+// Boucle sur chaque slider
+sliderContainers.forEach((container, index) => {
+  const slides = container.querySelectorAll(".slide");
+
+  let currentSlide = 0;
+
+  // Fonction pour afficher la diapositive active
+  function showSlide(n) {
+    // Réinitialiser la diapositive active
+    slides.forEach((slide) => slide.classList.remove("active"));
+
+    // Afficher la diapositive active
+    slides[n].classList.add("active");
+  }
+
+  // Fonction pour passer à la diapositive suivante
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Fonction pour revenir à la diapositive précédente
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Ajouter les écouteurs d'événements
+  nextBtns[index].addEventListener("click", nextSlide);
+  prevBtns[index].addEventListener("click", prevSlide);
+
+  // Afficher la première diapositive
+  showSlide(currentSlide);
+});
+/*//slider
 // Sélectionnez tous les éléments nécessaires
 const sliderContainers = document.querySelectorAll(".slider-container");
 const prevBtns = document.querySelectorAll(".prev-btn");
@@ -90,7 +129,7 @@ sliderContainers.forEach((container, index) => {
 
   // Afficher la première diapositive
   showSlide(currentSlide);
-});
+});*/
 
 //partie formulaire de contact
 const form = document.querySelector(".contact-form");
