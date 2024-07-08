@@ -66,8 +66,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #0095b6;
+  background-color: #add8e6;
   height: 50px;
+  border-radius: 25px;
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -77,6 +79,11 @@ body {
 
 .logo i {
   margin-right: 10px;
+  color: #000;
+}
+.title-header {
+  font-size: 16px;
+  font-weight: bold;
 }
 /* Styles pour le menu hamburger */
 .hamburger-menu {
@@ -89,7 +96,7 @@ body {
 .line {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 3px;
   transition: all 0.3s ease-in-out;
 }
@@ -98,8 +105,9 @@ body {
 .menu {
   display: none;
   list-style-type: none;
-  background-color: #008b8b;
+  background-color: #ffa07a;
   padding: 20px;
+  border-radius: 25px;
 }
 
 .menu.active {
@@ -149,7 +157,7 @@ body {
 #a-propos {
   max-width: 100%;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fffacd;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   animation: typewriter 15s steps(20) 1;
@@ -169,7 +177,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 /* Animation de machine à écrire */
@@ -224,9 +232,10 @@ body {
 /*partie projets*/
 #projets {
   padding: 40px;
-  background: linear-gradient(to right, #000, #0095b6);
+  background-color: #98fb98;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
 }
 
 h2 {
@@ -432,7 +441,7 @@ h2 {
 .contact-section {
   padding: 40px 0;
   border-radius: 20px;
-  background: linear-gradient(to right, #000, #0095b6);
+  background-color: #ffb6c1;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -596,11 +605,12 @@ h2 {
 }
 /* Styles pour le footer */
 footer {
-  background-color: #0095b6;
+  background-color: #add8e6;
   color: #fff;
   padding: 20px 5px;
   margin-top: 5px;
   height: 50px;
+  border-radius: 25px;
 }
 
 .links {
@@ -610,7 +620,7 @@ footer {
 }
 
 .link {
-  color: white;
+  color: #000;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -624,12 +634,12 @@ footer {
 
 .copyright {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
 }
 footer .fab,
 .fas {
-  color: #fff;
+  color: black;
   font-size: 25px;
 }
 i.slider-competence,
