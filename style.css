@@ -4,7 +4,8 @@ body {
   margin: 0;
 }
 body {
-  background-color: #000;
+  background-color: #fefefe;
+
   background-size: cover; /* Redimensionne l'image pour qu'elle couvre toute la fenêtre */
   background-position: center; /* Centre l'image horizontalement et verticalement */
   background-repeat: no-repeat;
@@ -21,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("assets/images/backgroundbody.webp");
+  background-image: url("assets/images/background.webp");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,7 @@ body {
 }
 
 #loader-content p {
-  color: white;
+  color: black;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
