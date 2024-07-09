@@ -45,10 +45,10 @@ sliderContainers.forEach((container, index) => {
 
   // Fonction pour afficher la diapositive active
   function showSlide(n) {
-    // Réinitialiser la diapositive active
+    // Réinitialise la diapositive active
     slides.forEach((slide) => slide.classList.remove("active"));
 
-    // Afficher la diapositive active
+    // Affiche la diapositive active
     slides[n].classList.add("active");
   }
 
@@ -64,11 +64,11 @@ sliderContainers.forEach((container, index) => {
     showSlide(currentSlide);
   }
 
-  // Ajouter les écouteurs d'événements
+  // Ajouts des écouteurs d'événements
   nextBtns[index].addEventListener("click", nextSlide);
   prevBtns[index].addEventListener("click", prevSlide);
 
-  // Afficher la première diapositive
+  // Affiche la première diapositive
   showSlide(currentSlide);
 });
 
@@ -100,7 +100,7 @@ form.addEventListener("submit", (event) => {
     confirmationMessage.style.display = "none";
   }, 3000);
 });
-
+// envoie des données
 function sendFormByEmail(formData) {
   const emailBody = `
     Nouveau message de contact :
