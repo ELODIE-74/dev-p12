@@ -270,6 +270,7 @@ h2 {
   width: 100%;
   height: 350px;
   overflow: hidden;
+  border-radius: 25px;
 }
 .lien-github {
   text-decoration: none;
@@ -386,12 +387,12 @@ h2 {
   }
 
   .slider-nav-btn {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 
 /*Styles formulaire de contact*/
-.contact-section {
+/*.contact-section {
   padding: 40px 0;
   border-radius: 20px;
   background-color: #ffb6c1;
@@ -428,6 +429,7 @@ h2 {
 .contact-form label {
   font-weight: bold;
   margin-right: 10px;
+  margin-left: 10px;
   white-space: nowrap;
   font-size: 18px;
   color: black;
@@ -461,7 +463,7 @@ h2 {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-}
+}*/
 /* Styles formulaire de contact */
 .contact-section {
   padding: 40px 0;
@@ -507,6 +509,7 @@ h2 {
 .contact-form label {
   font-weight: bold;
   margin-right: 10px;
+  margin-left: 10px;
   white-space: nowrap;
   font-size: 18px;
   color: black;
@@ -519,7 +522,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .contact-form textarea {
@@ -550,12 +553,12 @@ h2 {
   }
 
   .contact-title {
-    font-size: 5vw;
+    font-size: 6vw;
     margin-bottom: 2%;
   }
 
   .contact-text {
-    font-size: 4vw;
+    font-size: 6vw;
     margin-bottom: 4%;
   }
 
@@ -579,7 +582,7 @@ h2 {
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 80%;
     font-size: 3.5vw;
     margin-right: 0;
   }
@@ -591,6 +594,8 @@ h2 {
   .submit-btn {
     font-size: 3.5vw;
     padding: 2% 4%;
+    width: 100px;
+    margin-left: 70px;
   }
 }
 
@@ -628,7 +633,7 @@ h2 {
   }
 
   .contact-form textarea {
-    width: 100%;
+    width: 80%;
     height: 15vh;
   }
 
