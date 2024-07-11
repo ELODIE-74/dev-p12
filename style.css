@@ -600,6 +600,9 @@ footer {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.links h2 {
+  margin-bottom: 10px;
+}
 .link:hover {
   color: whitesmoke;
   font-size: large;
