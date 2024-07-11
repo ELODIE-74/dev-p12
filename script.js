@@ -72,11 +72,13 @@ sliderContainers.forEach((container, index) => {
   showSlide(currentSlide);
 });
 //formulaire de contact
-const form = document.getElementById("contact-form");
-const confirmationMessage = document.getElementById("confirmation-message");
+// Formulaire de contact
+const form = document.querySelector(".contact-form");
+const confirmationMessage = document.querySelector(".confirmation-message");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  event.preventDefault(); // Empêche le rechargement de la page
+
   const nameInput = document.getElementById("name");
   const companyInput = document.getElementById("company");
   const messageInput = document.getElementById("message");
@@ -92,10 +94,17 @@ form.addEventListener("submit", (event) => {
       company: company,
       message: message,
     });
+
+    // Réinitialiser les champs du formulaire
     nameInput.value = "";
     companyInput.value = "";
     messageInput.value = "";
+
+    // Afficher le message de confirmation
+    confirmationMessage.textContent = "Votre message a été envoyé avec succès.";
     confirmationMessage.style.display = "block";
+
+    // Cacher le message de confirmation après 3 secondes
     setTimeout(() => {
       confirmationMessage.style.display = "none";
     }, 3000);
