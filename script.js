@@ -73,7 +73,39 @@ sliderContainers.forEach((container, index) => {
 });
 
 //partie formulaire de contact
-const form = document.querySelector(".contact-form");
+const form = document.getElementById("contact-form");
+const confirmationMessage = document.getElementById("confirmation-message");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Empêche le rechargement de la page
+
+  const nameInput = document.getElementById("name");
+  const companyInput = document.getElementById("company");
+  const messageInput = document.getElementById("message");
+
+  const name = nameInput.value.trim();
+  const company = companyInput.value.trim();
+  const message = messageInput.value.trim();
+
+  if (name !== "" && message !== "") {
+    // Simuler l'envoi du message ici
+    console.log("Message envoyé :", {
+      name: name,
+      company: company,
+      message: message,
+    });
+    nameInput.value = "";
+    companyInput.value = "";
+    messageInput.value = "";
+    confirmationMessage.style.display = "block";
+    setTimeout(() => {
+      confirmationMessage.style.display = "none";
+    }, 3000);
+  } else {
+    alert("Veuillez remplir tous les champs obligatoires.");
+  }
+});
+/*const form = document.querySelector(".contact-form");
 const nameInput = document.getElementById("name");
 const companyInput = document.getElementById("company");
 const messageTextarea = document.getElementById("message");
@@ -113,7 +145,7 @@ function sendFormByEmail(formData) {
     emailBody
   )}`;
 }
-
+*/
 //modale cv
 const cvLink = document.getElementById("cv-link");
 const cvModal = document.getElementById("cv-modal");
