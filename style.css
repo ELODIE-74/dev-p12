@@ -278,7 +278,7 @@ h2 {
 .project-slider {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 300px; /* Définissez une hauteur fixe pour le conteneur du slider */
   overflow: hidden;
   border-radius: 25px;
 }
@@ -301,7 +301,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 300px; /* Définissez une hauteur fixe pour les slides */
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -312,8 +312,8 @@ h2 {
 
 .slide img {
   width: 100%;
-  height: 150%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
 }
 
 .slider-nav-btn {
