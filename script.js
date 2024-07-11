@@ -71,14 +71,12 @@ sliderContainers.forEach((container, index) => {
   // Affiche la première diapositive
   showSlide(currentSlide);
 });
-
-//partie formulaire de contact
+//formulaire de contact
 const form = document.getElementById("contact-form");
 const confirmationMessage = document.getElementById("confirmation-message");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Empêche le rechargement de la page
-
+  event.preventDefault();
   const nameInput = document.getElementById("name");
   const companyInput = document.getElementById("company");
   const messageInput = document.getElementById("message");
@@ -105,47 +103,6 @@ form.addEventListener("submit", (event) => {
     alert("Veuillez remplir tous les champs obligatoires.");
   }
 });
-/*const form = document.querySelector(".contact-form");
-const nameInput = document.getElementById("name");
-const companyInput = document.getElementById("company");
-const messageTextarea = document.getElementById("message");
-const confirmationMessage = document.querySelector(".confirmation-message");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = {
-    name: nameInput.value,
-    company: companyInput.value,
-    message: messageTextarea.value,
-  };
-
-  sendFormByEmail(formData);
-
-  // Afficher le message de confirmation
-  confirmationMessage.textContent = "Votre message a bien été envoyé.";
-  confirmationMessage.style.display = "block";
-
-  // Réinitialiser le formulaire après 3 secondes
-  setTimeout(() => {
-    form.reset();
-    confirmationMessage.style.display = "none";
-  }, 3000);
-});
-// envoie des données
-function sendFormByEmail(formData) {
-  const emailBody = `
-    Nouveau message de contact :
-    Nom : ${formData.name}
-    Entreprise : ${formData.company}
-    Message : ${formData.message}
-  `;
-
-  window.location.href = `mailto:elodie.jance.pro@gmail.com?subject=Nouveau message de contact&body=${encodeURIComponent(
-    emailBody
-  )}`;
-}
-*/
 //modale cv
 const cvLink = document.getElementById("cv-link");
 const cvModal = document.getElementById("cv-modal");
