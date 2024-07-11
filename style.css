@@ -218,7 +218,7 @@ body {
 /*partie projets*/
 #projets {
   padding: 40px;
-  background-color: #98fb98;
+  background-color: #fffacd;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-top: 10px;
@@ -405,7 +405,7 @@ h2 {
 .contact-section {
   padding: 40px 0;
   border-radius: 20px;
-  background-color: #ffb6c1;
+  background-color: #fffacd;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-top: 10px;
   margin-bottom: 10px;
