@@ -120,7 +120,7 @@ const cvIframe = document.getElementById("cv-iframe");
 
 cvLink.addEventListener("click", () => {
   cvModal.style.display = "block";
-  cvIframe.src = "./assets/images/mon_cv_1.png";
+  cvIframe.src = "./assets/images/moncv.webp";
 });
 
 closeButton.addEventListener("click", () => {
