@@ -113,6 +113,7 @@ form.addEventListener("submit", (event) => {
   }
 });
 //modale cv
+/*
 const cvLink = document.getElementById("cv-link");
 const cvModal = document.getElementById("cv-modal");
 const closeButton = document.getElementsByClassName("close-button")[0];
@@ -131,4 +132,4 @@ window.addEventListener("click", (event) => {
   if (event.target === cvModal) {
     cvModal.style.display = "none";
   }
-});
+});*/

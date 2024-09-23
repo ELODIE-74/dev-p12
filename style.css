@@ -635,6 +635,9 @@ i.slider-competence,
 .fa-brands {
   color: black;
 }
+.copyright {
+  margin-top: 20px;
+}
 @media (max-width: 767px) {
   footer {
     padding: 10px;
@@ -667,6 +670,9 @@ i.slider-competence,
   .fas {
     font-size: 20px;
   }
+  .copyright {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -695,6 +701,9 @@ i.slider-competence,
   footer .fab,
   .fas {
     font-size: 25px;
+  }
+  .copyright {
+    margin-top: 20px;
   }
 }
 .cv-modal {
